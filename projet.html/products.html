@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - LUMORA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>LUMORA</h1>
+                <p>Natural Skincare Solutions</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">My Products</a></li>
+                    <li><a href="brands.html">Shop by Brand</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="products-main">
+        <section class="products-header">
+            <h1>Our Skincare Collection</h1>
+            <p>Formulated with natural ingredients for healthy, glowing skin</p>
+        </section>
+
+        <section class="product-categories">
+            <div class="category-card" onclick="filterProducts('all')">
+                <i class="fas fa-star"></i>
+                <h3>All Products</h3>
+            </div>
+            <div class="category-card" onclick="filterProducts('serum')">
+                <i class="fas fa-flask"></i>
+                <h3>Serums</h3>
+            </div>
+            <div class="category-card" onclick="filterProducts('cleanser')">
+                <i class="fas fa-pump-soap"></i>
+                <h3>Cleansers</h3>
+            </div>
+            <div class="category-card" onclick="filterProducts('moisturizer')">
+                <i class="fas fa-spa"></i>
+                <h3>Moisturizers</h3>
+            </div>
+            <div class="category-card" onclick="filterProducts('toner')">
+                <i class="fas fa-tint"></i>
+                <h3>Toners</h3>
+            </div>
+        </section>
+
+        <section class="all-products">
+            <div class="product-grid">
+                <div class="product-card" data-category="serum">
+                    <img src="photo_5834462460730526318_y.jpg" alt="Salicylic Acid Serum">
+                    <h3>Salicylic Acid Serum</h3>,
+                    
+                    <p>Deep cleansing and pore refining</p>
+                    <span class="price">$24.99</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="serum">
+                    <img src="photo_5836834300585166193_y.jpg" alt="Hyaluronic Acid Serum">
+                    <h3>Hyaluronic Acid Serum</h3>
+                    <p>Intense hydration for all skin types</p>
+                    <span class="price">$22.99</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="cleanser">
+                    <img src="photo_5836834300585166192_y.jpg" alt="Cleansing Balm">
+                    <h3>Cleansing Balm</h3>
+
+                    <p>Gentle yet effective makeup remover</p>
+                    <span class="price">$18.99</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="cleanser">
+                    <img src="photo_5834462460730526319_y.jpg" alt="Natural Soap">
+                    <h3>Natural Soap</h3>
+                    <p>Organic ingredients for sensitive skin</p>
+                    <span class="price">$12.99</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="moisturizer">
+                    <img src="photo_5834462460730526311_y.jpg" alt="Natural Moisturizer">
+                    <h3>Natural Moisturizer</h3>
+                    <p>Daily hydration with plant extracts</p>
+                    <span class="price">$20.99</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="toner">
+                    <img src="ChatGPT Image May 10, 2025, 01_35_06 PM.png" alt="Hydrating Toner">
+                    <h3>Hydrating Toner</h3><br>
+                    <p>Balance and refresh your skin</p>
+                    <span class="price">$16.99</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h3>LUMORA</h3>
+                <p>Natural skincare for radiant, healthy skin.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>info@lumora.com</p>
+                <p>+1 (555) 123-4567</p>
+                <div class="social-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 LUMORA Skincare. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
